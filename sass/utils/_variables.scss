@@ -6,10 +6,20 @@ $tertiary-color: #99E2D0;
 // Font
 
 // family
-$heading-font: Shrikand;
+$heading-font: Shrikhand;
 $text-font: Roboto, sans-serif;
 
 // weight
 $normal: 400;
 $semi-bold: 500;
 $bold: 700;
+
+// headings list
+$headings: (
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+);
