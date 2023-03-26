@@ -18,24 +18,37 @@ a {
 
 .header {
   text-align: center;
-  padding: 18px 0 14px 0;
+  padding: 30px 0 10px 0;
 }
 .header__back {
   font-size: 22px;
   position: absolute;
   left: 30px;
-  top: 20px;
+  top: 33px;
 }
 
 .search-form {
   display: flex;
   flex-direction: column;
+  row-gap: 30px;
 }
 .search-form__label {
   position: absolute;
 }
 .search-form__input {
   text-align: center;
+}
+.search-form__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.search-form__heading, .search-form__text {
+  width: 75%;
+}
+.search-form__text {
+  font-weight: 100;
 }
 
 /*# sourceMappingURL=style.css.map */
