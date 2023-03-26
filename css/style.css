@@ -19,4 +19,16 @@ body {
   font-family: Shrikhand;
 }
 
+.search-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.search-form__label {
+  position: absolute;
+}
+.search-form__input {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
