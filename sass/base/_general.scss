@@ -1,14 +1,19 @@
+* {
+  font-family: Roboto;
+}
+
 %no-pad-marg {
   margin: 0;
   padding: 0;
+}
+
+body {
+  @extend %no-pad-marg;
+  line-height: 1;
 }
 
 @each $heading in $headings {
   #{$heading} {
     @extend %no-pad-marg;
   }
-}
-
-body {
-  @extend %no-pad-marg;
 }
