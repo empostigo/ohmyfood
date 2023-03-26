@@ -58,9 +58,6 @@ a {
 .search-form__input:focus {
   outline: none;
 }
-.search-form__input[value]::before {
-  content: "     ";
-}
 .search-form__info {
   display: flex;
   flex-direction: column;

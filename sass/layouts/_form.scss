@@ -32,10 +32,6 @@
     &:focus {
       outline: none;
     }
-
-    &[value]::before {
-      content: '     ';
-    }
   }
 
   &__info {
