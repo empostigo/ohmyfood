@@ -36,6 +36,7 @@ a {
   position: absolute;
 }
 .search-form__input {
+  height: 50px;
   text-align: center;
 }
 .search-form__div {
