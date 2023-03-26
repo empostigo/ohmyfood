@@ -3,27 +3,42 @@
   flex-direction: column;
   row-gap: 30px;
 
-  &__label {
-    position: absolute;
+  &__div {
+    position: relative;
+    display: flex;
   }
 
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+
+  &__icon {
+    font-size: 19px;
+    margin-left: 32px;
+  }
 
   &__input {
     height: 50px;
     font-size: 18px;
     font-weight: $semi-bold;
-    text-align: center;
+    width: 11em;
+    border: none;
 
     &:focus {
       outline: none;
     }
+
+    &[value]::before {
+      content: '     ';
+    }
   }
 
-  &__icon {
-    font-size: 19px;
-  }
-
-  &__div {
+  &__info {
     display: flex;
     flex-direction: column;
     align-items: center;

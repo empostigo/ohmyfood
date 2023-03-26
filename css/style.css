@@ -32,22 +32,36 @@ a {
   flex-direction: column;
   row-gap: 30px;
 }
+.search-form__div {
+  position: relative;
+  display: flex;
+}
 .search-form__label {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1em;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.search-form__icon {
+  font-size: 19px;
+  margin-left: 32px;
 }
 .search-form__input {
   height: 50px;
   font-size: 18px;
   font-weight: 500;
-  text-align: center;
+  width: 11em;
+  border: none;
 }
 .search-form__input:focus {
   outline: none;
 }
-.search-form__icon {
-  font-size: 19px;
+.search-form__input[value]::before {
+  content: "     ";
 }
-.search-form__div {
+.search-form__info {
   display: flex;
   flex-direction: column;
   align-items: center;
