@@ -37,7 +37,15 @@ a {
 }
 .search-form__input {
   height: 50px;
+  font-size: 18px;
+  font-weight: 500;
   text-align: center;
+}
+.search-form__input:focus {
+  outline: none;
+}
+.search-form__icon {
+  font-size: 19px;
 }
 .search-form__div {
   display: flex;

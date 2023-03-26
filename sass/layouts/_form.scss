@@ -7,9 +7,20 @@
     position: absolute;
   }
 
+
   &__input {
     height: 50px;
+    font-size: 18px;
+    font-weight: $semi-bold;
     text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__icon {
+    font-size: 19px;
   }
 
   &__div {
@@ -25,6 +36,6 @@
   }
 
   &__text {
-    font-weight: 100;
+    font-weight: $thin;
   }
 }
