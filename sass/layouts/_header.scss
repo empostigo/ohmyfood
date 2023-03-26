@@ -2,7 +2,10 @@
   text-align: center;
   padding: 18px 0 14px 0;
 
-  &__heading {
-    font-family: $heading-font;
+  &__back {
+    font-size: 22px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
   }
 }
