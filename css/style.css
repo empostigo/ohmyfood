@@ -18,14 +18,20 @@ a {
 }
 
 .header {
-  text-align: center;
-  padding: 30px 0 10px 0;
+  display: flex;
+  justify-content: start;
+  padding: 20px 0 6px 0;
+}
+.header--home {
+  padding-left: 49.25px;
+  justify-content: center;
 }
 .header__back {
   font-size: 1.375em;
-  position: absolute;
-  left: 30px;
-  top: 33px;
+  margin-left: 30px;
+}
+.header__logo {
+  margin: auto;
 }
 
 .search-form {
