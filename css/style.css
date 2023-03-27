@@ -8,6 +8,7 @@ h6, h5, h4, h3, h2, h1, body {
 }
 
 body {
+  font-size: 16px;
   line-height: 1;
 }
 
@@ -21,7 +22,7 @@ a {
   padding: 30px 0 10px 0;
 }
 .header__back {
-  font-size: 22px;
+  font-size: 1.375em;
   position: absolute;
   left: 30px;
   top: 33px;
@@ -43,14 +44,14 @@ a {
   border-style: solid;
 }
 .search-form__icon {
-  font-size: 19px;
+  font-size: 1.125em;
   margin-left: 32px;
 }
 .search-form__input {
   height: 46px;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 500;
-  width: 11em;
+  width: 176px;
   background-color: #EAEAEA;
   border: none;
 }
