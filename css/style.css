@@ -20,10 +20,10 @@ a {
 .header {
   display: flex;
   justify-content: start;
-  padding: 20px 0 6px 0;
+  padding: 20px 49.25px 6px 0;
 }
 .header--home {
-  padding-left: 49.25px;
+  padding-right: 0;
   justify-content: center;
 }
 .header__back {
