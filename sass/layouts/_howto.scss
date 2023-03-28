@@ -6,12 +6,17 @@
   &__list {
     @include flex-column;
     row-gap: 20px;
-    padding: 0 20px;
     list-style: none;
     counter-reset: bullets;
   }
 
   &__items::before {
+    font-size: 14px;
+    font-weight: $semi-bold;
+    color: $light-text;
+    padding: 4px 8px;
+    background-color: $primary-color;
+    border-radius: 12px;
     counter-increment: bullets;
     content: counter(bullets);
   }

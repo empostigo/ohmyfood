@@ -112,11 +112,16 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  padding: 0 20px;
   list-style: none;
   counter-reset: bullets;
 }
 .howto__items::before {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 4px 8px;
+  background-color: #9356DC;
+  border-radius: 12px;
   counter-increment: bullets;
   content: counter(bullets);
 }
