@@ -27,3 +27,7 @@ a {
   text-decoration: none;
   color: $neutral;
 }
+
+ol {
+  @extend %no-pad-marg;
+}
