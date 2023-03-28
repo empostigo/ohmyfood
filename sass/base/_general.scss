@@ -19,6 +19,10 @@ body {
   }
 }
 
+p {
+  @extend %no-pad-marg;
+}
+
 a {
   text-decoration: none;
   color: $neutral;
