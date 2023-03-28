@@ -1,0 +1,44 @@
+// mixins for flexbox display
+// j stand for justify-content option
+// a stand for align-items option
+// and ja for both
+
+@mixin flexbox-row-j($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin flexbox-row-a($align) {
+  display: flex;
+  align-items: $align;
+}
+
+@mixin flexbox-row-ja($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-j($justify) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+}
+
+@mixin flex-column-a($align) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+}
+
+@mixin flex-column-ja($justify, $align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}

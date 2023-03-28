@@ -1,11 +1,9 @@
 .howto {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   row-gap: 30px;
 
   &__list {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     row-gap: 20px;
   }
 }

@@ -1,14 +1,11 @@
 .search-form {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   row-gap: 33px;
   background-color: $light-ground;
   padding-bottom: 55px;
 
   &__label {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+    @include flexbox-row-ja(center, baseline);
     column-gap: 1em;
     background-color: $dark-ground;
     border-image: linear-gradient($gradient-color1, $gradient-color2) 100;
@@ -36,9 +33,7 @@
 
   &__info {
     align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-a(center);
     row-gap: 20px;
     width: 76%;
     text-align: center;
