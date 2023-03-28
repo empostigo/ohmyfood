@@ -36,6 +36,12 @@ a {
   margin: auto;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
 .search-form {
   display: flex;
   flex-direction: column;
@@ -83,7 +89,7 @@ a {
   font-weight: 100;
 }
 .search-form__button {
-  color: white;
+  color: #FFFFFF;
   align-self: center;
   background: linear-gradient(350deg, #9356DC, #FF79DA);
   font-size: 1em;
@@ -100,11 +106,19 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  padding: 0 20px 15px 20px;
 }
 .howto__list {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  padding: 0 20px;
+  list-style: none;
+  counter-reset: bullets;
+}
+.howto__items::before {
+  counter-increment: bullets;
+  content: counter(bullets);
 }
 
 /*# sourceMappingURL=style.css.map */

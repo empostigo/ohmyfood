@@ -1,0 +1,4 @@
+.main {
+  @include flex-column;
+  row-gap: 50px;
+}

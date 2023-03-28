@@ -1,9 +1,18 @@
 .howto {
   @include flex-column;
   row-gap: 30px;
+  padding: 0 20px 15px 20px;
 
   &__list {
     @include flex-column;
     row-gap: 20px;
+    padding: 0 20px;
+    list-style: none;
+    counter-reset: bullets;
+  }
+
+  &__items::before {
+    counter-increment: bullets;
+    content: counter(bullets);
   }
 }
