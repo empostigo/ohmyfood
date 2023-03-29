@@ -125,5 +125,9 @@ a {
   counter-increment: bullets;
   content: counter(bullets);
 }
+.howto__icons {
+  font-size: 20px;
+  color: #7e7e7e;
+}
 
 /*# sourceMappingURL=style.css.map */

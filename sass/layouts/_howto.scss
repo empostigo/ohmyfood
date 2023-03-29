@@ -10,14 +10,22 @@
     counter-reset: bullets;
   }
 
-  &__items::before {
-    font-size: 14px;
-    font-weight: $semi-bold;
-    color: $light-text;
-    padding: 4px 8px;
-    background-color: $primary-color;
-    border-radius: 12px;
-    counter-increment: bullets;
-    content: counter(bullets);
+  &__items {
+
+    &::before {
+      font-size: 14px;
+      font-weight: $semi-bold;
+      color: $light-text;
+      padding: 4px 8px;
+      background-color: $primary-color;
+      border-radius: 12px;
+      counter-increment: bullets;
+      content: counter(bullets);
+    }
+  }
+
+  &__icons {
+    font-size: 20px;
+    color: $howto-colors;
   }
 }
