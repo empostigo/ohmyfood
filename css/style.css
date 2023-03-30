@@ -19,14 +19,11 @@ a {
 
 .header {
   display: flex;
-  padding: 22px 49.25px 12px 0;
+  padding: 24px 49.25px 12px 0;
 }
 .header--home {
   padding-right: 0;
   justify-content: center;
-}
-.header__heading {
-  height: 26px;
 }
 .header__back {
   font-size: 1.375em;
@@ -83,6 +80,9 @@ a {
   width: 76%;
   text-align: center;
   margin-top: 10px;
+}
+.search-form__heading {
+  font-size: 1.5em;
 }
 .search-form__text {
   font-size: 1.0625em;
