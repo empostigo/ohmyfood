@@ -1,0 +1,6 @@
+.restaurants {
+  @include flex-column;
+  row-gap: 26px;
+  padding: 60px 20px;
+  background-color: $light-ground;
+}

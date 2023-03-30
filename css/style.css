@@ -161,4 +161,12 @@ a {
   font-weight: 500;
 }
 
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+  padding: 60px 20px;
+  background-color: #F7F7F7;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@
   padding-bottom: 55px;
 
   &__label {
-    @include flexbox-row-ja(center, baseline);
+    @include flex-row-ja(center, baseline);
     column-gap: 1em;
     background-color: $dark-ground;
     border-image: linear-gradient($gradient-color1, $gradient-color2) 100;

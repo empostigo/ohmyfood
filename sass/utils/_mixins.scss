@@ -3,17 +3,17 @@
 // a stand for align-items option
 // and ja for both
 
-@mixin flexbox-row-j($justify) {
+@mixin flex-row-j($justify) {
   display: flex;
   justify-content: $justify;
 }
 
-@mixin flexbox-row-a($align) {
+@mixin flex-row-a($align) {
   display: flex;
   align-items: $align;
 }
 
-@mixin flexbox-row-ja($justify, $align) {
+@mixin flex-row-ja($justify, $align) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
