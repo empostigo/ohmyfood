@@ -1,5 +1,5 @@
 .howto {
-  @include flex-column;
+  @include flex-column-a(center);
   row-gap: 30px;
   padding: 0 20px 15px 20px;
 
