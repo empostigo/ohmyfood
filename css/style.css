@@ -217,13 +217,16 @@ a {
 .card__text--raw {
   text-transform: none;
 }
+.card__icon-color {
+  font-size: 24px;
+  color: #F7F7F7;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
 .card__icon-color:active {
+  text-shadow: none;
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   color: transparent;
-}
-.card__icon {
-  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

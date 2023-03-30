@@ -45,15 +45,15 @@
   }
 
   &__icon-color {
+    font-size: 24px;
+    color: $light-ground;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 
     &:active {
+      text-shadow: none;
       background: linear-gradient($primary-color, $secondary-color);
       background-clip: text;
       color: transparent;
     }
-  }
-
-  &__icon {
-    font-size: 24px;
   }
 }
