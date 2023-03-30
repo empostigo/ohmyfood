@@ -1,0 +1,59 @@
+.card {
+  height: 250px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+
+  &__img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  &__description {
+    @include flex-row-ja(space-between, center);
+    height: 30%;
+    padding: 0 22px 0 12px;
+
+  }
+
+  &__link {
+    flex: 1 0 auto;
+  }
+
+  &__div {
+    @include flex-column;
+    row-gap: 6px;
+
+  }
+
+  &__heading {
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__text {
+    font-size: 1.0625em;
+    font-weight: $thin;
+    text-transform: capitalize;
+
+    &--raw {
+      text-transform: none;
+    }
+  }
+
+  &__icon-color {
+
+    &:active {
+      background: linear-gradient($primary-color, $secondary-color);
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__icon {
+    font-size: 24px;
+  }
+}

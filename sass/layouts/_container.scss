@@ -1,0 +1,9 @@
+.container {
+  @include flex-column;
+  row-gap: 16px;
+
+  &__half {
+    @include flex-column;
+    row-gap: 16px;
+  }
+}
