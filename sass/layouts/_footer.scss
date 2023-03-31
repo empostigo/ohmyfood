@@ -1,0 +1,39 @@
+.footer {
+  @include flex-column;
+  row-gap: 22px;
+  padding: 24px 0 34px 22px;
+  background-color: $footer-color;
+  color: $light-text;
+
+  &__text {
+    font-family: $heading-font;
+    font-size: 1.125em;
+  }
+
+  &__container {
+    @include flex-column;
+    row-gap: 10px
+  }
+
+  &__list {
+    @include flex-column;
+    row-gap: 10px;
+    list-style: none;
+  }
+
+  &__links {
+    display: flex;
+    color: $light-text;
+  }
+
+  &__icons {
+    font-size: 14px;
+    width: 24px;
+
+    &--rotate {
+      font-size: 11px;
+      transform: translateY(2px) translateX(-10px) rotate(135deg);
+    }
+  }
+
+}
