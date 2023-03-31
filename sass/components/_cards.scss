@@ -51,7 +51,8 @@
 
     &:active {
       text-shadow: none;
-      background-image: linear-gradient($primary-color, $secondary-color);
+      background: linear-gradient($primary-color, $secondary-color);
+      -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
