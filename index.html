@@ -21,7 +21,7 @@
     </svg>
   </header>
   <main class="main">
-    <form class="search-form">
+    <form action="#restaurants" class="search-form">
       <label for="location" class="search-form__label">
         <i class="fa-solid fa-location-dot search-form__icon"></i>
         <input type="text" id="location" name="fname" value="Paris, Belleville" class="search-form__input">
@@ -30,7 +30,7 @@
         <h1 class="search-form__heading">Réservez le menu qui vous convient</h1>
         <p class="search-form__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
       </div>
-      <button type="button" class="search-form__button">Explorer nos restautants</button>
+      <button type="submit" class="search-form__button">Explorer nos restautants</button>
     </form>
     <div class="howto">
       <h2 class="howto__heading">Fonctionnement</h2>
@@ -55,13 +55,13 @@
         </li>
       </ol>
     </div>
-    <section class="restaurants">
+    <section id="restaurants" class="restaurants">
       <h2>Restaurants</h2>
       <div class="container">
         <div class="container__half">
           <article class="card">
             <a href="restaurants/lapalettedugout.html" class="card__link">
-              <img src="images/restaurants/lapalettedugout.jpg" alt="" class="card__img">
+              <img src="images/restaurants/lapalettedugout.jpg" alt="La palette du goût" class="card__img">
               <div class="card__description">
                 <div class="card__div">
                   <h3 class="card__heading">la palette du goût</h3>
@@ -76,7 +76,7 @@
           </article>
           <article class="card">
             <a href="restaurants/lanoteenchantee.html" class="card__link">
-              <img src="images/restaurants/lanoteenchantee.jpg" alt="" class="card__img">
+              <img src="images/restaurants/lanoteenchantee.jpg" alt="La note enchantée" class="card__img">
               <div class="card__description">
                 <div class="card__div">
                   <h3 class="card__heading">la note enchantée</h3>
@@ -93,7 +93,7 @@
         <div class="container__half">
           <article class="card">
             <a href="restaurants/alafrancaise.html" class="card__link">
-              <img src="images/restaurants/alafrancaise.jpg" alt="" class="card__img">
+              <img src="images/restaurants/alafrancaise.jpg" alt="&Agrave; la française" class="card__img">
               <div class="card__description">
                 <div class="card__div">
                   <h3 class="card__heading">à la française</h3>
@@ -108,7 +108,7 @@
           </article>
           <article class="card">
             <a href="restaurants/ledelicedessens.html" class="card__link">
-              <img src="images/restaurants/ledelicedessens.jpg" alt="" class="card__img">
+              <img src="images/restaurants/ledelicedessens.jpg" alt="Le délice des sens" class="card__img">
               <div class="card__description">
                 <div class="card__div">
                   <h3 class="card__heading">le délice des sens</h3>
