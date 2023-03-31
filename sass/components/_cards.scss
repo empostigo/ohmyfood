@@ -18,10 +18,6 @@
 
   }
 
-  &__link {
-    flex: 1 0 auto;
-  }
-
   &__div {
     @include flex-column;
     row-gap: 6px;

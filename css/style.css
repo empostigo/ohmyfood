@@ -200,9 +200,6 @@ a {
   height: 30%;
   padding: 0 22px 0 12px;
 }
-.card__link {
-  flex: 1 0 auto;
-}
 .card__div {
   display: flex;
   flex-direction: column;
