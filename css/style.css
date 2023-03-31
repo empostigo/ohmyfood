@@ -266,5 +266,18 @@ a {
   background-clip: text;
   color: transparent;
 }
+.card__new {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 10px 12px;
+  font-size: 0.875em;
+  font-weight: 500;
+  color: #008766;
+  background-color: #99E2D0;
+}
+.card__new--hidden {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
