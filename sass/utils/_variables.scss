@@ -25,12 +25,19 @@ $normal: 400;
 $semi-bold: 500;
 $bold: 700;
 
-// headings list
-$headings: (
+// Default font size
+$font-size_base: 16px;
+
+// Selector list for padding and margin reset
+$selectors: (
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6
+  h6,
+  body,
+  p,
+  ol,
+  ul
 );

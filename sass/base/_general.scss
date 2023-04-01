@@ -13,25 +13,13 @@ body {
   line-height: 1;
 }
 
-@each $heading in $headings {
-  #{$heading} {
+@each $selector in $selectors {
+  #{$selector} {
     @extend %no-pad-marg;
   }
-}
-
-p {
-  @extend %no-pad-marg;
 }
 
 a {
   text-decoration: none;
   color: $neutral;
-}
-
-ol {
-  @extend %no-pad-marg;
-}
-
-ul {
-  @extend %no-pad-marg;
 }
