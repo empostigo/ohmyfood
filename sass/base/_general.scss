@@ -9,7 +9,7 @@
 
 body {
   @extend %no-pad-marg;
-  font-size: 16px;
+  font-size: $base_font-size;
   line-height: 1;
 }
 

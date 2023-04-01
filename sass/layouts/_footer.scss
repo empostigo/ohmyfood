@@ -7,7 +7,7 @@
 
   &__text {
     font-family: $heading-font;
-    font-size: 1.125em;
+    font-size: calc_em(18px);
   }
 
   &__container {
@@ -27,11 +27,11 @@
   }
 
   &__icons {
-    font-size: 14px;
+    font-size: calc_em(14px);
     width: 24px;
 
     &--rotate {
-      font-size: 11px;
+      font-size: calc_em(11px);
       transform: translateY(2px) translateX(-10px) rotate(135deg);
     }
   }

@@ -122,7 +122,7 @@ a {
   height: 74px;
 }
 .howto__items::before {
-  font-size: 0.8125em;
+  font-size: clac_em(13px);
   font-weight: 500;
   color: #FFFFFF;
   padding: 5px 8px;
@@ -150,14 +150,14 @@ a {
   z-index: -1;
 }
 .howto__icons {
-  font-size: 1.25em;
+  font-size: clac_em(20px);
   text-align: center;
   width: 20px;
   margin-left: 30px;
   color: #7e7e7e;
 }
 .howto__span {
-  font-size: 1em;
+  font-size: clac_em(16px);
   font-weight: 500;
 }
 
@@ -208,11 +208,11 @@ a {
   color: #FFFFFF;
 }
 .footer__icons {
-  font-size: 14px;
+  font-size: 0.875em;
   width: 24px;
 }
 .footer__icons--rotate {
-  font-size: 11px;
+  font-size: 0.6875em;
   transform: translateY(2px) translateX(-10px) rotate(135deg);
 }
 
@@ -255,13 +255,14 @@ a {
   position: absolute;
   right: 22px;
   bottom: 24px;
-  font-size: 24px;
+  font-size: 1.5em;
   color: #F7F7F7;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .card__icon-color:active {
   text-shadow: none;
-  background: linear-gradient(#9356DC, #FF79DA);
+  border: none;
+  background-image: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

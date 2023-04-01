@@ -32,7 +32,7 @@
   }
 
   &__text {
-    font-size: 1.0625em;
+    font-size: calc_em(17px);
     font-weight: $thin;
     text-transform: capitalize;
 
@@ -45,13 +45,14 @@
     position: absolute;
     right: 22px;
     bottom: 24px;
-    font-size: 24px;
+    font-size: calc_em(24px);
     color: $light-ground;
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    text-shadow: -1px 0 $neutral, 0 1px $neutral, 1px 0 $neutral, 0 -1px $neutral;
 
     &:active {
       text-shadow: none;
-      background: linear-gradient($primary-color, $secondary-color);
+      border: none;
+      background-image: linear-gradient($primary-color, $secondary-color);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -63,7 +64,7 @@
     top: 12px;
     right: 12px;
     padding: 10px 12px;
-    font-size: 0.875em;
+    font-size: calc_em(14px);
     font-weight: $semi-bold;
     color: $new-color;
     background-color: $tertiary-color;

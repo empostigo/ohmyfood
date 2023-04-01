@@ -16,7 +16,7 @@
     height: 74px;
 
     &::before {
-      font-size: 0.8125em;
+      font-size: clac_em(13px);
       font-weight: $semi-bold;
       color: $light-text;
       padding: 5px 8px;
@@ -52,7 +52,7 @@
   }
 
   &__icons {
-    font-size: 1.25em;
+    font-size: clac_em(20px);
     text-align: center;
     width: 20px;
     margin-left: 30px;
@@ -60,7 +60,7 @@
   }
 
   &__span {
-    font-size: 1em;
+    font-size: clac_em(16px);
     font-weight: $semi-bold;
   }
 }
