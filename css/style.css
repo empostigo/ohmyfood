@@ -27,7 +27,7 @@ a {
 }
 .header__back {
   font-size: 1.375em;
-  margin-left: 30px;
+  margin-left: 22px;
 }
 .header__logo {
   margin: auto;
@@ -36,7 +36,57 @@ a {
 .main {
   display: flex;
   flex-direction: column;
+}
+.main--home {
   row-gap: 50px;
+}
+.main__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 36px;
+  position: relative;
+  padding-top: 40px;
+}
+.main__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -50px;
+  left: -10px;
+  width: 93%;
+  margin: 0 10px;
+  padding: 30px 14px 0 14px;
+  background-color: #FFFFFF;
+  border-radius: 40px 40px 0 0;
+}
+.main__heading {
+  font-size: 1.75em;
+  font-weight: 400;
+  font-family: Shrikhand;
+}
+.main__heading::first-letter {
+  text-transform: uppercase;
+}
+.main__icon-color {
+  font-size: 1.5em;
+  color: #F7F7F7;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  padding-right: 30px;
+}
+.main__icon-color:active {
+  text-shadow: none;
+  border: none;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.main__sections {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin: 0 10px;
 }
 
 .search-form {
@@ -101,6 +151,9 @@ a {
   border-radius: 24px;
   box-shadow: 0 5px 5px #C7C7C7;
 }
+.search-form__button:active {
+  box-shadow: 0 -2px 5px 2px #C7C7C7;
+}
 
 .howto {
   display: flex;
@@ -156,7 +209,7 @@ a {
   margin-left: 30px;
   color: #7e7e7e;
 }
-.howto__span {
+.howto__text {
   font-weight: 500;
 }
 
@@ -213,6 +266,20 @@ a {
 .footer__icons--rotate {
   font-size: 0.6875em;
   transform: translateY(2px) translateX(-10px) rotate(135deg);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.menu__heading {
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+  border-image: linear-gradient(to right, #99E2D0 12%, transparent 12%) 100% 1;
 }
 
 .card {

@@ -1,4 +1,59 @@
 .main {
   @include flex-column;
-  row-gap: 50px;
+
+  &--home {
+    row-gap: 50px;
+  }
+
+  &__container {
+    @include flex-column;
+    row-gap: 36px;
+    position: relative;
+    padding-top: 40px
+  }
+
+  &__title {
+    @include flex-row-ja(space-between, center);
+    position: absolute;
+    top: -50px;
+    left: -10px;
+    width: 93%;
+    margin: 0 10px;
+    padding: 30px 14px 0 14px;
+    background-color: $no-color;
+    border-radius: 40px 40px 0 0;
+  }
+
+  &__heading {
+    font-size: calc_em(28px);
+    font-weight: $normal;
+    font-family: $heading-font;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__icon-color {
+
+    font-size: calc_em(24px);
+    color: $light-ground;
+    text-shadow: -1px 0 $neutral, 0 1px $neutral, 1px 0 $neutral, 0 -1px $neutral;
+    padding-right: 30px;
+
+    &:active {
+      text-shadow: none;
+      border: none;
+      background-image: linear-gradient($primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__sections {
+    @include flex-column;
+    row-gap: 40px;
+    margin: 0 10px;
+  }
 }

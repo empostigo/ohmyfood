@@ -1,4 +1,7 @@
+@use "sass:math";
+
 // Calculate the font-size in em
 @function calc_em($px) {
-  @return #{$px / $base_font-size}em;
+  $size: math.div($px, $base_font-size);
+  @return #{$size}em;
 }
