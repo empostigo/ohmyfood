@@ -21,7 +21,7 @@
   &__input {
     height: 46px;
     font-size: calc_em(16px);
-    font-weight: $semi-bold;
+    font-weight: $normal;
     width: 176px;
     background-color: $dark-ground;
     border: none;
@@ -35,18 +35,19 @@
     align-self: center;
     @include flex-column-a(center);
     row-gap: 20px;
-    width: 76%;
     text-align: center;
     margin-top: 10px;
   }
 
   &__heading {
     font-size: calc_em(24px);
+    width: 75%;
   }
 
   &__text {
-    font-size: calc_em(17px);
-    font-weight: $thin;
+    font-size: calc_em(18px);
+    font-weight: $light;
+    width: 85%;
   }
 
   &__button {

@@ -1,25 +1,27 @@
-* {
-  font-family: Roboto;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 
-%no-pad-marg {
-  margin: 0;
-  padding: 0;
-}
+ * {
+   font-family: 'Roboto', sans-serif;
+ }
 
-body {
-  @extend %no-pad-marg;
-  font-size: $base_font-size;
-  line-height: 1;
-}
+ %no-pad-marg {
+   margin: 0;
+   padding: 0;
+ }
 
-@each $selector in $selectors {
-  #{$selector} {
-    @extend %no-pad-marg;
-  }
-}
+ body {
+   @extend %no-pad-marg;
+   font-size: $base_font-size;
+   line-height: 1;
+ }
 
-a {
-  text-decoration: none;
-  color: $neutral;
-}
+ @each $selector in $selectors {
+   #{$selector} {
+     @extend %no-pad-marg;
+   }
+ }
+
+ a {
+   text-decoration: none;
+   color: $neutral;
+ }

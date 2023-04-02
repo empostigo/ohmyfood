@@ -8,7 +8,7 @@
 
   &__layout {
     @include flex-column;
-    row-gap: 5px;
+    row-gap: 8px;
     width: 85%;
   }
 
@@ -29,8 +29,8 @@
   }
 
   &__desc {
-    font-size: calc_em(15px);
-    font-weight: $thin;
+    font-size: calc_em(14px);
+    font-weight: $light;
     width: 210px;
     white-space: nowrap;
     overflow: hidden;
@@ -52,10 +52,10 @@
     background-color: $tertiary-color;
     border: none;
     border-radius: 0 15px 15px 0;
+    font-size: calc_em(20px);
   }
 
   &__icon {
-    font-size: 20px;
     background-color: $tertiary-color;
     color: $no-color;
   }
