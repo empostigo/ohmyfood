@@ -400,6 +400,7 @@ a {
 .meal__desc {
   font-size: 0.875em;
   font-weight: 300;
+  letter-spacing: 0.4px;
   width: 210px;
   white-space: nowrap;
   overflow: hidden;
