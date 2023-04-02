@@ -5,24 +5,25 @@
     row-gap: 50px;
   }
 
+  &__heading-div {
+    margin-bottom: -50px
+  }
+
+  &__img {
+    width: 105%
+  }
+
   &__container {
     @include flex-column;
     row-gap: 36px;
-    position: relative;
     padding-top: 40px;
     background-color: $light-ground;
+    border-radius: 40px
   }
 
   &__title {
     @include flex-row-ja(space-between, center);
-    position: absolute;
-    top: -50px;
-    left: -10px;
-    width: 93%;
     margin: 0 10px;
-    padding: 30px 14px 0 14px;
-    background-color: $light-ground;
-    border-radius: 40px 40px 0 0;
   }
 
   &__heading {
