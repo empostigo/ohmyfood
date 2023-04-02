@@ -29,8 +29,6 @@
   &__div {
     @include flex-row-ja(space-between, baseline);
     padding-right: 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   &__desc {
