@@ -22,7 +22,6 @@
   &__container {
     @include flex-column;
     row-gap: 36px;
-    width: 100%;
     padding-top: 40px;
     background-color: $light-ground;
     border-radius: 40px;
