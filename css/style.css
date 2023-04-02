@@ -50,6 +50,8 @@ a {
 }
 .main__img {
   width: 105%;
+  height: 266px;
+  object-fit: cover;
 }
 .main__container {
   display: flex;

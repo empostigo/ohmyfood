@@ -10,11 +10,13 @@
   }
 
   &__heading-div {
-    margin-bottom: -50px
+    margin-bottom: -50px;
   }
 
   &__img {
-    width: 105%
+    width: 105%;
+    height: 266px;
+    object-fit: cover;
   }
 
   &__container {
@@ -22,7 +24,7 @@
     row-gap: 36px;
     padding-top: 40px;
     background-color: $light-ground;
-    border-radius: 40px
+    border-radius: 40px;
   }
 
   &__title {
