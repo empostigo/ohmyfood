@@ -73,10 +73,10 @@ a {
   text-transform: uppercase;
 }
 .main__icon-color {
+  padding-right: 30px;
   font-size: 1.5em;
   color: #F7F7F7;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  padding-right: 30px;
 }
 .main__icon-color:active {
   text-shadow: none;
@@ -103,6 +103,9 @@ a {
   border: none;
   border-radius: 24px;
   box-shadow: 0 5px 5px #C7C7C7;
+}
+.main__button:active {
+  box-shadow: 0 -2px 5px 2px #C7C7C7;
 }
 
 .search-form {

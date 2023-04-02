@@ -42,19 +42,8 @@
 
   &__icon-color {
 
-    font-size: calc_em(24px);
-    color: $light-ground;
-    text-shadow: -1px 0 $neutral, 0 1px $neutral, 1px 0 $neutral, 0 -1px $neutral;
     padding-right: 30px;
-
-    &:active {
-      text-shadow: none;
-      border: none;
-      background-image: linear-gradient($primary-color, $secondary-color);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
+    @include purple-heart;
   }
 
   &__sections {
