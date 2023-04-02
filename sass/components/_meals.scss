@@ -1,0 +1,62 @@
+.meal {
+  @include flex-row-ja(space-between, center);
+  height: 66px;
+  padding-left: 10px;
+  background-color: $no-color;
+  box-shadow: 0px 0px 12px $gradient-color1;
+  border-radius: 15px;
+
+  &__layout {
+    @include flex-column;
+    row-gap: 5px;
+    width: 85%;
+  }
+
+  &__heading {
+    font-size: calc_em(18px);
+    font-weight: $semi-bold;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__div {
+    @include flex-row-j(space-between);
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__desc {
+    font-size: calc_em(15px);
+    font-weight: $thin;
+    width: 210px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__price {
+    font-size: calc_em(15px);
+    font-weight: 900;
+  }
+
+  &__select {
+    height: 100%;
+    width: 58px;
+    background-color: $tertiary-color;
+    border: none;
+    border-radius: 0 15px 15px 0;
+  }
+
+  &__icon {
+    font-size: 20px;
+    background-color: $tertiary-color;
+    color: $no-color;
+  }
+}
