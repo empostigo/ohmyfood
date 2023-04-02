@@ -8,13 +8,14 @@
 
   &__layout {
     @include flex-column;
-    row-gap: 8px;
+    row-gap: 5px;
     width: 85%;
   }
 
   &__heading {
     font-size: calc_em(18px);
     font-weight: $semi-bold;
+    letter-spacing: 0.1px;
 
     &::first-letter {
       text-transform: uppercase;
@@ -22,15 +23,16 @@
   }
 
   &__div {
-    @include flex-row-j(space-between);
+    @include flex-row-ja(space-between, baseline);
     padding-right: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   &__desc {
-    font-size: calc_em(14px);
+    font-size: calc_em(15px);
     font-weight: $light;
+    line-height: 1.3;
     letter-spacing: 0.4px;
     width: 210px;
     white-space: nowrap;
@@ -45,6 +47,7 @@
   &__price {
     font-size: calc_em(15px);
     font-weight: 900;
+    line-height: 1.3;
   }
 
   &__select {

@@ -5,9 +5,10 @@
   background-color: $footer-color;
   color: $light-text;
 
-  &__text {
+  &__home {
     font-family: $heading-font;
     font-size: calc_em(18px);
+    color: $no-color;
   }
 
   &__container {
