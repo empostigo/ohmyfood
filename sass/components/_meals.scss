@@ -16,6 +16,10 @@
     font-size: calc_em(18px);
     font-weight: $semi-bold;
     letter-spacing: 0.1px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &::first-letter {
       text-transform: uppercase;
