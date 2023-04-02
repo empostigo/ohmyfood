@@ -42,3 +42,16 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin purple-button($side-padding: 20px) {
+  color: $light-text;
+  align-self: center;
+  background: linear-gradient(350deg, $primary-color, $secondary-color);
+  font-size: calc_em(16px);
+  font-weight: $semi-bold;
+  height: 50px;
+  padding: 0 $side-padding;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 5px 5px $shadow-color;
+}

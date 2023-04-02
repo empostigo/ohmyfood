@@ -36,9 +36,13 @@ a {
 .main {
   display: flex;
   flex-direction: column;
+  padding-bottom: 36px;
+  background-color: #F7F7F7;
 }
 .main--home {
   row-gap: 50px;
+  background-color: transparent;
+  padding-bottom: 0;
 }
 .main__heading-div {
   margin-bottom: -50px;
@@ -87,6 +91,18 @@ a {
   flex-direction: column;
   row-gap: 40px;
   margin: 0 10px;
+}
+.main__button {
+  color: #FFFFFF;
+  align-self: center;
+  background: linear-gradient(350deg, #9356DC, #FF79DA);
+  font-size: 1em;
+  font-weight: 500;
+  height: 50px;
+  padding: 0 49px;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 5px 5px #C7C7C7;
 }
 
 .search-form {
@@ -145,7 +161,6 @@ a {
   font-size: 1em;
   font-weight: 500;
   height: 50px;
-  width: max-content;
   padding: 0 20px;
   border: none;
   border-radius: 24px;

@@ -1,8 +1,12 @@
 .main {
   @include flex-column;
+  padding-bottom: 36px;
+  background-color: $light-ground;
 
   &--home {
     row-gap: 50px;
+    background-color: transparent;
+    padding-bottom: 0;
   }
 
   &__heading-div {
@@ -57,5 +61,9 @@
     @include flex-column;
     row-gap: 40px;
     margin: 0 10px;
+  }
+
+  &__button {
+    @include purple-button(49px);
   }
 }
