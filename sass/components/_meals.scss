@@ -5,6 +5,19 @@
   background-color: $no-color;
   box-shadow: 0px 0px 12px $gradient-color1;
   border-radius: 15px;
+  opacity: 0;
+  animation-name: progress-menu;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+
+  &--two {
+    animation-delay: 250ms;
+  }
+
+  &--three {
+    animation-delay: 500ms;
+  }
 
   &__layout {
     @include flex-column;
