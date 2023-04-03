@@ -105,9 +105,24 @@ a {
   border: none;
   border-radius: 24px;
   box-shadow: 0 5px 5px #C7C7C7;
+  position: relative;
+  z-index: 1;
 }
-.main__button:hover {
-  background: linear-gradient(350deg, #9356DC, 40%, #FF79DA);
+.main__button:hover::after {
+  opacity: 1;
+}
+.main__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacicty 300ms;
+  border-radius: 24px;
+  background: linear-gradient(350deg, #9356DC, 30%, #FF79DA);
   box-shadow: 0 5px 5px 2px #C7C7C7;
 }
 
@@ -172,9 +187,24 @@ a {
   border: none;
   border-radius: 24px;
   box-shadow: 0 5px 5px #C7C7C7;
+  position: relative;
+  z-index: 1;
 }
-.search-form__button:hover {
-  background: linear-gradient(350deg, #9356DC, 40%, #FF79DA);
+.search-form__button:hover::after {
+  opacity: 1;
+}
+.search-form__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacicty 300ms;
+  border-radius: 24px;
+  background: linear-gradient(350deg, #9356DC, 30%, #FF79DA);
   box-shadow: 0 5px 5px 2px #C7C7C7;
 }
 
