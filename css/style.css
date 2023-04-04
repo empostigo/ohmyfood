@@ -447,12 +447,18 @@ a {
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-duration: 1s;
+  transform: rotate(0);
 }
 .meal:hover > .meal__layout {
   width: 82%;
 }
 .meal:hover > .meal__select {
   width: 58px;
+}
+.meal:hover > .meal__select > .meal__icon {
+  transform: rotate(360deg);
+  background-color: #99E2D0;
+  color: #FFFFFF;
 }
 .meal--two {
   animation-delay: 250ms;
@@ -507,11 +513,15 @@ a {
   border: none;
   border-radius: 0 15px 15px 0;
   font-size: 1.25em;
-  transition: width 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 .meal__icon {
   background-color: #99E2D0;
   color: #FFFFFF;
+  background-color: transparent;
+  color: transparent;
+  transform: rotate(0deg);
+  transition: transform 500ms ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */

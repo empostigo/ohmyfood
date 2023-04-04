@@ -10,6 +10,7 @@
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-duration: 1s;
+  transform: rotate(0);
 
   &:hover {
 
@@ -19,6 +20,12 @@
 
     &>.meal__select {
       width: 58px;
+
+      &>.meal__icon {
+        transform: rotate(360deg);
+        background-color: $tertiary-color;
+        color: $no-color;
+      }
     }
   }
 
@@ -81,12 +88,16 @@
     border: none;
     border-radius: 0 15px 15px 0;
     font-size: calc_em(20px);
-    transition: width 500ms ease-out;
+    transition: all 500ms ease-out;
 
   }
 
   &__icon {
     background-color: $tertiary-color;
     color: $no-color;
+    background-color: transparent;
+    color: transparent;
+    transform: rotate(0deg);
+    transition: transform 500ms ease-out;
   }
 }
