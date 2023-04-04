@@ -11,6 +11,17 @@
   animation-fill-mode: both;
   animation-duration: 1s;
 
+  &:hover {
+
+    &>.meal__layout {
+      width: 82%;
+    }
+
+    &>.meal__select {
+      width: 58px;
+    }
+  }
+
   &--two {
     animation-delay: 250ms;
   }
@@ -23,22 +34,13 @@
     @include flex-column;
     row-gap: 5px;
     width: 100%;
-
-    &:hover {
-
-      &+.meal__select {
-        animation-name: select;
-        animation-duration: 500ms;
-        animation-timing-function: ease-out;
-        animation-fill-mode: both;
-      }
-
-    }
+    transition: width 500ms;
   }
 
   &__heading {
     font-size: calc_em(18px);
     font-weight: $semi-bold;
+    padding-right: 70px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -73,14 +75,14 @@
   }
 
   &__select {
+    width: 0;
+    height: 100%;
     background-color: $tertiary-color;
     border: none;
     border-radius: 0 15px 15px 0;
     font-size: calc_em(20px);
-    animation-name: deselect;
-    animation-duration: 500ms;
-    animation-timing-function: ease-out;
-    animation-fill-mode: both;
+    transition: width 500ms ease-out;
+
   }
 
   &__icon {
