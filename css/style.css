@@ -420,12 +420,8 @@ a {
   background-color: #FFFFFF;
   box-shadow: 0px 0px 12px #CECECE;
   border-radius: 15px;
-  opacity: 0;
-  animation-name: progress-menu;
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
-  animation-duration: 1s;
   overflow: hidden;
+  animation: progress-menu 1s ease-out both;
 }
 .meal:hover > .meal__layout {
   width: 82%;
@@ -489,7 +485,7 @@ a {
   border: none;
   border-radius: 0 15px 15px 0;
   font-size: 1.25em;
-  transition: all 500ms ease-out 100ms;
+  transition: width 500ms ease-out 100ms;
 }
 .meal__icon {
   color: #FFFFFF;
