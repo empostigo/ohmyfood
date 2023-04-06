@@ -447,7 +447,7 @@ a {
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-duration: 1s;
-  transform: rotate(0);
+  overflow: hidden;
 }
 .meal:hover > .meal__layout {
   width: 82%;
@@ -457,8 +457,6 @@ a {
 }
 .meal:hover > .meal__select > .meal__icon {
   transform: rotate(360deg);
-  background-color: #99E2D0;
-  color: #FFFFFF;
 }
 .meal--two {
   animation-delay: 250ms;
@@ -469,13 +467,13 @@ a {
 .meal__layout {
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
   width: 100%;
   transition: width 500ms;
 }
 .meal__heading {
   font-size: 1.125em;
   font-weight: 500;
+  line-height: 1.4;
   padding-right: 70px;
   white-space: nowrap;
   overflow: hidden;
@@ -516,10 +514,7 @@ a {
   transition: all 500ms ease-out;
 }
 .meal__icon {
-  background-color: #99E2D0;
   color: #FFFFFF;
-  background-color: transparent;
-  color: transparent;
   transform: rotate(0deg);
   transition: transform 500ms ease-out;
 }

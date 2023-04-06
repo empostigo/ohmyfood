@@ -10,7 +10,7 @@
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-duration: 1s;
-  transform: rotate(0);
+  overflow: hidden;
 
   &:hover {
 
@@ -23,8 +23,6 @@
 
       &>.meal__icon {
         transform: rotate(360deg);
-        background-color: $tertiary-color;
-        color: $no-color;
       }
     }
   }
@@ -39,7 +37,6 @@
 
   &__layout {
     @include flex-column;
-    row-gap: 5px;
     width: 100%;
     transition: width 500ms;
   }
@@ -47,6 +44,7 @@
   &__heading {
     font-size: calc_em(18px);
     font-weight: $semi-bold;
+    line-height: 1.4;
     padding-right: 70px;
     white-space: nowrap;
     overflow: hidden;
@@ -93,10 +91,7 @@
   }
 
   &__icon {
-    background-color: $tertiary-color;
     color: $no-color;
-    background-color: transparent;
-    color: transparent;
     transform: rotate(0deg);
     transition: transform 500ms ease-out;
   }
