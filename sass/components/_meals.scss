@@ -86,13 +86,13 @@
     border: none;
     border-radius: 0 15px 15px 0;
     font-size: calc_em(20px);
-    transition: all 500ms ease-out;
+    transition: all 500ms ease-out 100ms;
 
   }
 
   &__icon {
     color: $no-color;
     transform: rotate(0deg);
-    transition: transform 500ms ease-out;
+    transition: transform 500ms ease-out 100ms;
   }
 }

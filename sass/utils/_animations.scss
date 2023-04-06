@@ -9,30 +9,3 @@
     transform: translateY(0px);
   }
 }
-
-@keyframes select {
-  0% {
-    visibility: visible;
-    width: 0;
-    height: 100%;
-  }
-
-  100% {
-    visibility: visible;
-    width: 58px;
-    height: 100%;
-  }
-}
-
-@keyframes deselect {
-  from {
-    width: 58px;
-    height: 100%;
-  }
-
-  to {
-    width: 0;
-    height: 100%;
-  }
-
-}
