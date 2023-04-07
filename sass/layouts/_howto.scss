@@ -3,11 +3,18 @@
   row-gap: 30px;
   padding: 0 20px 15px 20px;
 
+
   &__list {
     @include flex-column;
     row-gap: 20px;
     list-style: none;
     counter-reset: bullets;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      column-gap: 30px;
+    }
+
   }
 
   &__items {
@@ -48,7 +55,9 @@
     border-radius: 20px;
     z-index: -1;
 
-
+    @media (min-width: 1024px) {
+      width: 16vh;
+    }
   }
 
   &__icons {

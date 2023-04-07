@@ -42,6 +42,12 @@ a {
 .header__logo {
   margin: auto;
 }
+@media (min-width: 1024px) {
+  .header__logo > image {
+    width: 200px;
+    height: 34px;
+  }
+}
 
 .main {
   display: flex;
@@ -181,6 +187,12 @@ a {
   font-size: 1.5em;
   width: 75%;
 }
+@media (min-width: 1024px) {
+  .search-form__heading {
+    font-size: 2.5em;
+    width: 100%;
+  }
+}
 .search-form__text {
   font-size: 1.125em;
   font-weight: 300;
@@ -231,6 +243,12 @@ a {
   list-style: none;
   counter-reset: bullets;
 }
+@media (min-width: 1024px) {
+  .howto__list {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+}
 .howto__items {
   display: flex;
   align-items: center;
@@ -264,6 +282,11 @@ a {
   box-shadow: 6px 6px 12px 2px #EAEAEA;
   border-radius: 20px;
   z-index: -1;
+}
+@media (min-width: 1024px) {
+  .howto__div {
+    width: 16vh;
+  }
 }
 .howto__icons {
   font-size: 1.25em;
