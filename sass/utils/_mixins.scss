@@ -48,7 +48,7 @@
   color: $light-ground;
   text-shadow: -1px 0 $neutral, 0 1px $neutral, 1px 0 $neutral, 0 -1px $neutral;
 
-  &:active {
+  &:hover {
     text-shadow: none;
     border: none;
     background-image: linear-gradient($primary-color, $secondary-color);
