@@ -348,6 +348,13 @@ a {
   background-color: #353535;
   color: #FFFFFF;
 }
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    column-gap: 90px;
+    padding-right: 3%;
+  }
+}
 .footer__home {
   font-family: Shrikhand;
   font-size: 1.125em;
@@ -358,11 +365,23 @@ a {
   flex-direction: column;
   row-gap: 10px;
 }
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    column-gap: 40px;
+  }
+}
 .footer__list {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   list-style: none;
+}
+@media (min-width: 768px) {
+  .footer__list {
+    flex-direction: row;
+    column-gap: 20px;
+  }
 }
 .footer__links {
   display: flex;

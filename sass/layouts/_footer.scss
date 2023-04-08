@@ -5,6 +5,12 @@
   background-color: $footer-color;
   color: $light-text;
 
+  @media (min-width: $min-width) {
+    flex-direction: row-reverse;
+    column-gap: 90px;
+    padding-right: 3%;
+  }
+
   &__home {
     font-family: $heading-font;
     font-size: calc_em(18px);
@@ -14,12 +20,22 @@
   &__container {
     @include flex-column;
     row-gap: 10px;
+
+    @media (min-width: $min-width) {
+      flex-direction: row;
+      column-gap: 40px;
+    }
   }
 
   &__list {
     @include flex-column;
     row-gap: 10px;
     list-style: none;
+
+    @media (min-width: $min-width) {
+      flex-direction: row;
+      column-gap: 20px;
+    }
   }
 
   &__links {
