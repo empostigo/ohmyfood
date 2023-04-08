@@ -3,6 +3,10 @@
   row-gap: 30px;
   padding: 0 20px 15px 20px;
 
+  @media (min-width: $min-width) {
+    padding-left: 10%;
+  }
+
 
   &__list {
     @include flex-column;
@@ -10,7 +14,7 @@
     list-style: none;
     counter-reset: bullets;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $min-width) {
       flex-direction: row;
       column-gap: 30px;
     }
@@ -55,8 +59,9 @@
     border-radius: 20px;
     z-index: -1;
 
-    @media (min-width: 1024px) {
-      width: 16vh;
+    @media (min-width: $min-width) {
+      width: 250px;
+      column-gap: 10px;
     }
   }
 
@@ -66,6 +71,10 @@
     width: 20px;
     margin-left: 30px;
     color: $howto-colors;
+
+    @media (min-width: $min-width) {
+      width: initial;
+    }
   }
 
   &__text {

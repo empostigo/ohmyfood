@@ -43,7 +43,7 @@ a {
   margin: auto;
 }
 @media (min-width: 1024px) {
-  .header__logo > image {
+  .header__image {
     width: 200px;
     height: 34px;
   }
@@ -236,6 +236,11 @@ a {
   row-gap: 30px;
   padding: 0 20px 15px 20px;
 }
+@media (min-width: 1024px) {
+  .howto {
+    padding-left: 10%;
+  }
+}
 .howto__list {
   display: flex;
   flex-direction: column;
@@ -285,7 +290,8 @@ a {
 }
 @media (min-width: 1024px) {
   .howto__div {
-    width: 16vh;
+    width: 250px;
+    column-gap: 10px;
   }
 }
 .howto__icons {
@@ -294,6 +300,11 @@ a {
   width: 20px;
   margin-left: 30px;
   color: #7e7e7e;
+}
+@media (min-width: 1024px) {
+  .howto__icons {
+    width: initial;
+  }
 }
 .howto__text {
   font-weight: 500;
@@ -306,16 +317,24 @@ a {
   padding: 60px 20px;
   background-color: #F7F7F7;
 }
+@media (min-width: 1024px) {
+  .restaurants {
+    padding: 60px 10%;
+  }
+}
 
 .container {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
 }
-.container__half {
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vh 6vh;
+  }
 }
 
 .footer {

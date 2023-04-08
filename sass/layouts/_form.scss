@@ -43,7 +43,7 @@
     font-size: calc_em(24px);
     width: 75%;
 
-    @media (min-width: 1024px) {
+    @media (min-width: $min-width) {
       font-size: calc_em(40px);
       width: 100%;
     }

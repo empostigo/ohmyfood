@@ -2,8 +2,10 @@
   @include flex-column;
   row-gap: 16px;
 
-  &__half {
-    @include flex-column;
-    row-gap: 16px;
+  @media (min-width: $min-width) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vh 6vh;
   }
 }
