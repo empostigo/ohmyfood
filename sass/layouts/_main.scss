@@ -1,12 +1,9 @@
 .main {
   @include flex-column;
-  padding-bottom: 36px;
-  background-color: $light-ground;
 
   &--home {
     row-gap: 50px;
     background-color: transparent;
-    padding-bottom: 0;
   }
 
   &__heading-div {
@@ -22,14 +19,24 @@
   &__container {
     @include flex-column;
     row-gap: 36px;
-    padding-top: 40px;
+    padding: 40px 0;
     background-color: $light-ground;
-    border-radius: 40px;
+    border-radius: 40px 40px 0 0;
+
+    @media (min-width: $min-width) {
+      margin: 0 13%;
+      padding: 40px 13% 40px 13%;
+    }
   }
 
   &__title {
     @include flex-row-ja(space-between, center);
     margin: 0 10px;
+
+    @media (min-width: $min-width) {
+      justify-content: center;
+      column-gap: 24px;
+    }
   }
 
   &__heading {

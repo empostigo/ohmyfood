@@ -34,7 +34,7 @@
   &__layout {
     @include flex-column;
     width: 100%;
-    transition: width 500ms;
+    transition: width 500ms ease-out 100ms;
   }
 
   &__heading {
