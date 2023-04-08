@@ -42,7 +42,7 @@ a {
 .header__logo {
   margin: auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .header__image {
     width: 200px;
     height: 34px;
@@ -187,7 +187,7 @@ a {
   font-size: 1.5em;
   width: 75%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .search-form__heading {
     font-size: 2.5em;
     width: 100%;
@@ -236,7 +236,7 @@ a {
   row-gap: 30px;
   padding: 0 20px 15px 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .howto {
     padding-left: 10%;
     padding-right: 10%;
@@ -249,7 +249,7 @@ a {
   list-style: none;
   counter-reset: bullets;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .howto__list {
     flex-direction: row;
     column-gap: 30px;
@@ -291,9 +291,10 @@ a {
   border-radius: 20px;
   z-index: -1;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .howto__div {
     column-gap: 10px;
+    padding-right: 10px;
   }
 }
 .howto__icons {
@@ -303,7 +304,7 @@ a {
   margin-left: 30px;
   color: #7e7e7e;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .howto__icons {
     width: initial;
   }
@@ -319,7 +320,7 @@ a {
   padding: 60px 20px;
   background-color: #F7F7F7;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .restaurants {
     padding: 60px 10%;
   }
@@ -330,7 +331,7 @@ a {
   flex-direction: column;
   row-gap: 16px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .container {
     display: grid;
     grid-template-rows: 1fr 1fr;
