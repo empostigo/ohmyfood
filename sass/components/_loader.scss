@@ -1,0 +1,25 @@
+.loader {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 16px solid $primary-color;
+  top: 366px;
+  left: calc(50% - 41px);
+  animation: opac 1ms linear 2.25s both;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    border-radius: 50%;
+    z-index: -1;
+    background-image: linear-gradient($primary-color, $secondary-color);
+    animation: pulse 750ms ease-out 3;
+  }
+
+  @media (min-width: $min-width) {
+    top: 340px;
+  }
+}
