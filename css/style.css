@@ -239,6 +239,7 @@ a {
 @media (min-width: 1024px) {
   .howto {
     padding-left: 10%;
+    padding-right: 10%;
   }
 }
 .howto__list {
@@ -252,6 +253,7 @@ a {
   .howto__list {
     flex-direction: row;
     column-gap: 30px;
+    justify-content: space-between;
   }
 }
 .howto__items {
@@ -259,6 +261,7 @@ a {
   align-items: center;
   column-gap: 20px;
   height: 74px;
+  width: 100%;
 }
 .howto__items::before {
   font-size: 0.8125em;
@@ -290,7 +293,6 @@ a {
 }
 @media (min-width: 1024px) {
   .howto__div {
-    width: 250px;
     column-gap: 10px;
   }
 }

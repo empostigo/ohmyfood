@@ -5,6 +5,7 @@
 
   @media (min-width: $min-width) {
     padding-left: 10%;
+    padding-right: 10%;
   }
 
 
@@ -17,6 +18,7 @@
     @media (min-width: $min-width) {
       flex-direction: row;
       column-gap: 30px;
+      justify-content: space-between;
     }
 
   }
@@ -25,6 +27,7 @@
     @include flex-row-a(center);
     column-gap: 20px;
     height: 74px;
+    width: 100%;
 
     &::before {
       font-size: calc_em(13px);
@@ -60,7 +63,6 @@
     z-index: -1;
 
     @media (min-width: $min-width) {
-      width: 250px;
       column-gap: 10px;
     }
   }
