@@ -62,6 +62,6 @@
   }
 
   &__button {
-    @include purple-button(49px);
+    @include purple-button;
   }
 }
