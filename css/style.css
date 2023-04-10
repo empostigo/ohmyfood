@@ -153,39 +153,6 @@ a {
   row-gap: 40px;
   margin: 0 10px;
 }
-.main__button {
-  color: #FFFFFF;
-  align-self: center;
-  background: linear-gradient(350deg, #9356DC, #FF79DA);
-  font-size: 1em;
-  font-weight: 500;
-  height: 50px;
-  padding: 0 20px;
-  min-width: 186px;
-  border: none;
-  border-radius: 24px;
-  box-shadow: 0 5px 5px #C7C7C7;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-}
-.main__button:hover::after {
-  opacity: 1;
-}
-.main__button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 300ms;
-  border-radius: 24px;
-  background: linear-gradient(350deg, #9356DC, 30%, #FF79DA);
-  box-shadow: 0 5px 5px 2px #C7C7C7;
-}
 
 .search-form {
   display: flex;
@@ -242,39 +209,6 @@ a {
   font-size: 1.125em;
   font-weight: 300;
   width: 85%;
-}
-.search-form__button {
-  color: #FFFFFF;
-  align-self: center;
-  background: linear-gradient(350deg, #9356DC, #FF79DA);
-  font-size: 1em;
-  font-weight: 500;
-  height: 50px;
-  padding: 0 20px;
-  min-width: 186px;
-  border: none;
-  border-radius: 24px;
-  box-shadow: 0 5px 5px #C7C7C7;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-}
-.search-form__button:hover::after {
-  opacity: 1;
-}
-.search-form__button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 300ms;
-  border-radius: 24px;
-  background: linear-gradient(350deg, #9356DC, 30%, #FF79DA);
-  box-shadow: 0 5px 5px 2px #C7C7C7;
 }
 
 .howto {
@@ -634,6 +568,40 @@ a {
   .loader {
     top: 340px;
   }
+}
+
+.purple-button {
+  color: #FFFFFF;
+  align-self: center;
+  background: linear-gradient(350deg, #9356DC, #FF79DA);
+  font-size: 1em;
+  font-weight: 500;
+  height: 50px;
+  padding: 0 20px;
+  min-width: 186px;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 5px 5px #C7C7C7;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.purple-button:hover::after {
+  opacity: 1;
+}
+.purple-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 300ms;
+  border-radius: 24px;
+  background: linear-gradient(350deg, #9356DC, 30%, #FF79DA);
+  box-shadow: 0 5px 5px 2px #C7C7C7;
 }
 
 /*# sourceMappingURL=style.css.map */
