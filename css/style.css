@@ -136,8 +136,10 @@ a {
 .main__icon-color {
   padding-right: 30px;
   font-size: 1.5em;
+  background-image: none;
   color: #F7F7F7;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  transition: background-image 500ms ease-out;
 }
 .main__icon-color:hover {
   text-shadow: none;
@@ -436,8 +438,10 @@ a {
   right: 22px;
   bottom: 24px;
   font-size: 1.5em;
+  background-image: none;
   color: #F7F7F7;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  transition: background-image 500ms ease-out;
 }
 .card__icon-color:hover {
   text-shadow: none;

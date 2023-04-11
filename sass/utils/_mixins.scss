@@ -45,8 +45,10 @@
 
 @mixin purple-heart {
   font-size: calc_em(24px);
+  background-image: none;
   color: $light-ground;
   text-shadow: -1px 0 $neutral, 0 1px $neutral, 1px 0 $neutral, 0 -1px $neutral;
+  transition: background-image 500ms ease-out;
 
   &:hover {
     text-shadow: none;
