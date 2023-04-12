@@ -133,22 +133,6 @@ a {
 .main__heading::first-letter {
   text-transform: uppercase;
 }
-.main__icon-color {
-  padding-right: 30px;
-  font-size: 1.5em;
-  background-image: none;
-  color: #F7F7F7;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  transition: background-image 500ms ease-out;
-}
-.main__icon-color:hover {
-  text-shadow: none;
-  border: none;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
 .main__sections {
   display: flex;
   flex-direction: column;
@@ -433,24 +417,6 @@ a {
 .card__text--raw {
   text-transform: none;
 }
-.card__icon-color {
-  position: absolute;
-  right: 22px;
-  bottom: 24px;
-  font-size: 1.5em;
-  background-image: none;
-  color: #F7F7F7;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  transition: background-image 500ms ease-out;
-}
-.card__icon-color:hover {
-  text-shadow: none;
-  border: none;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
 .card__new {
   position: absolute;
   top: 12px;
@@ -607,6 +573,37 @@ a {
   border-radius: 24px;
   background: linear-gradient(350deg, #9356DC, 30%, #FF79DA);
   box-shadow: 0 5px 5px 2px #C7C7C7;
+}
+
+.like {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding-right: 30px;
+}
+.like--home {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+}
+.like__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 500ms ease-out;
+}
+.like__icon:hover {
+  opacity: 0;
+}
+.like__icon--checked {
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+}
+.like__icon--checked:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

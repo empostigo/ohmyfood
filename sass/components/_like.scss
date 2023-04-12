@@ -1,0 +1,35 @@
+.like {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding-right: 30px;
+
+  &--home {
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 500ms ease-out;
+
+    &:hover {
+      opacity: 0;
+    }
+
+    &--checked {
+      opacity: 0;
+      transition: opacity 500ms ease-out;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

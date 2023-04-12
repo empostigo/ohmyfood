@@ -49,12 +49,6 @@
     }
   }
 
-  &__icon-color {
-
-    padding-right: 30px;
-    @include purple-heart;
-  }
-
   &__sections {
     @include flex-column;
     row-gap: 40px;
