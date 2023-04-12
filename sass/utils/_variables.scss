@@ -3,13 +3,13 @@ $primary-color: #9356DC;
 $lighten-primary: #f5edff;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-$neutral: #000000;
+$neutral: black;
 $gradient-color1: #CECECE;
 $gradient-color2: #EAEAEA;
 $dark-ground: #EAEAEA;
 $light-ground: #F7F7F7;
-$light-text: #FFFFFF;
-$no-color: #FFFFFF;
+$light-text: white;
+$no-color: white;
 $shadow-color: #C7C7C7;
 $howto-colors: #7e7e7e;
 $footer-color: #353535;
@@ -46,4 +46,4 @@ $selectors: (
 );
 
 // media query min-width
-$min-width: 768px;
+$min-desktop-width: 768px;

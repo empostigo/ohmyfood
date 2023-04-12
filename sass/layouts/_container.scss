@@ -2,7 +2,7 @@
   @include flex-column;
   row-gap: 16px;
 
-  @media (min-width: $min-width) {
+  @media (min-width: $min-desktop-width) {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;

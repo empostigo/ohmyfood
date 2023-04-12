@@ -5,7 +5,7 @@
   background-color: $footer-color;
   color: $light-text;
 
-  @media (min-width: $min-width) {
+  @media (min-width: $min-desktop-width) {
     flex-direction: row-reverse;
     column-gap: 90px;
     padding-right: 3%;
@@ -21,7 +21,7 @@
     @include flex-column;
     row-gap: 10px;
 
-    @media (min-width: $min-width) {
+    @media (min-width: $min-desktop-width) {
       flex-direction: row;
       column-gap: 40px;
     }
@@ -32,7 +32,7 @@
     row-gap: 10px;
     list-style: none;
 
-    @media (min-width: $min-width) {
+    @media (min-width: $min-desktop-width) {
       flex-direction: row;
       column-gap: 20px;
     }

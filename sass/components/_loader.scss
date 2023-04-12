@@ -20,7 +20,7 @@
     animation: pulse 750ms ease-out 3;
   }
 
-  @media (min-width: $min-width) {
+  @media (min-width: $min-desktop-width) {
     top: 340px;
   }
 }

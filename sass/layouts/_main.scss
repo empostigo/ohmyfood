@@ -23,7 +23,7 @@
     background-color: $light-ground;
     border-radius: 40px 40px 0 0;
 
-    @media (min-width: $min-width) {
+    @media (min-width: $min-desktop-width) {
       margin: 0 13%;
       padding: 40px 13% 40px 13%;
     }
@@ -33,7 +33,7 @@
     @include flex-row-ja(space-between, center);
     margin: 0 10px;
 
-    @media (min-width: $min-width) {
+    @media (min-width: $min-desktop-width) {
       justify-content: center;
       column-gap: 24px;
     }
