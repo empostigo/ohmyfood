@@ -19,7 +19,7 @@
   &__container {
     @include flex-column;
     row-gap: 36px;
-    padding: 40px 0;
+    padding: 40px 10px;
     background-color: $light-ground;
     border-radius: 40px 40px 0 0;
 
@@ -31,11 +31,12 @@
 
   &__title {
     @include flex-row-ja(space-between, center);
-    margin: 0 10px;
+    padding-right: 40px;
 
     @media (min-width: $min-desktop-width) {
       justify-content: center;
-      column-gap: 24px;
+      column-gap: 22px;
+      padding-right: 0;
     }
   }
 
@@ -52,6 +53,5 @@
   &__sections {
     @include flex-column;
     row-gap: 40px;
-    margin: 0 10px;
   }
 }

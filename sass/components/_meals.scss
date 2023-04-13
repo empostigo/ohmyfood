@@ -12,11 +12,11 @@
   &:hover {
 
     &>.meal__layout {
-      width: 82%;
+      width: calc(100% - 59px);
     }
 
     &>.meal__select {
-      width: 58px;
+      width: 59px;
 
       &>.meal__icon {
         transform: rotate(360deg);

@@ -2,12 +2,12 @@
   position: relative;
   width: 24px;
   height: 24px;
-  padding-right: 30px;
 
   &--home {
     position: absolute;
     right: 0;
     bottom: 24px;
+    padding-right: 25px;
   }
 
   &__icon {
