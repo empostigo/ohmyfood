@@ -42,9 +42,7 @@
   }
 
   &__new {
-    position: absolute;
-    top: 12px;
-    right: 12px;
+    @include position($t: 12px, $r: 12px);
     padding: 10px 12px;
     font-size: calc_em(14px);
     font-weight: $semi-bold;

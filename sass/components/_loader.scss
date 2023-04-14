@@ -11,9 +11,7 @@
 
   &::after {
     content: "";
-    position: absolute;
-    top: -25px;
-    left: -25px;
+    @include position($t: -25px, $l: -25px);
     border-radius: 50%;
     z-index: -1;
     background-image: linear-gradient($primary-color, $secondary-color);

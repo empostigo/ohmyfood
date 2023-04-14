@@ -4,18 +4,12 @@
   height: 24px;
 
   &--home {
-    position: absolute;
-    right: 0;
-    bottom: 24px;
+    @include position($r: 0, $b: 24px);
     padding-right: 25px;
   }
 
   &__icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    @include position;
     opacity: 1;
     transition: opacity 500ms ease-out;
 
