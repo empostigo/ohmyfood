@@ -1,8 +1,12 @@
+@charset 'utf-8';
+
 @import "utils/variables";
 @import "utils/functions";
 @import "utils/mixins";
 @import "utils/animations";
+
 @import "base/general";
+
 @import "layouts/header";
 @import "layouts/main";
 @import "layouts/form";
@@ -12,6 +16,7 @@
 @import "layouts/footer";
 @import "layouts/menu";
 @import "layouts/wrapper";
+
 @import "components/cards";
 @import "components/meals";
 @import "components/loader";
