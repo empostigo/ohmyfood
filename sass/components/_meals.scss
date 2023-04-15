@@ -1,5 +1,6 @@
-.meal {
-  @include flex-row-ja(space-between, center);
+/* The dish selector animation is triggered when the .meal component is hovered */
+.meal /* article.meal */ {
+  @include flex-row-a(center);
   height: 66px;
   padding-left: 12px;
   background-color: $no-color;
@@ -7,19 +8,19 @@
   border-radius: 15px;
   cursor: pointer;
   overflow: hidden;
-  animation: progress-menu 1s ease-out both;
+  animation: progress-menu 1s ease-out both; /* gradual appearance of the meals */
 
   &:hover {
 
     &>.meal__layout {
-      width: calc(100% - 59px);
+      width: calc(100% - 59px); /* leave room for the button appearance */
     }
 
     &>.meal__select {
       width: 59px;
 
       &>.meal__icon {
-        transform: rotate(360deg);
+        transform: rotate(360deg); /* rotation of the check icon */
       }
     }
   }
@@ -33,7 +34,6 @@
   }
 
   &__layout {
-    @include flex-column;
     width: 100%;
     transition: width 500ms ease-out 100ms;
   }
@@ -43,9 +43,9 @@
     font-weight: $semi-bold;
     line-height: 1.4;
     padding-right: 62px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap;        /* no wrap to the next line */    
+    overflow: hidden;           /* hide the overflowing text */  
+    text-overflow: ellipsis;    /* and insert ellipsis at the cut */
 
     &::first-letter {
       text-transform: uppercase;
@@ -53,7 +53,7 @@
   }
 
   &__div {
-    @include flex-row-ja(space-between, baseline);
+    @include flex-row-j(space-between);
     padding-right: 20px;
   }
 
@@ -81,15 +81,14 @@
     height: 100%;
     background-color: $tertiary-color;
     border: none;
-    border-radius: 0 15px 15px 0;
     font-size: calc_em(20px);
-    transition: width 500ms ease-out 100ms;
+    transition: width 500ms ease-out 100ms; /* transition of the button made with width property  on .meal hover */
 
   }
 
   &__icon {
     color: $no-color;
     transform: rotate(0deg);
-    transition: transform 500ms ease-out 100ms;
+    transition: transform 500ms ease-out 100ms; /* rotation of the check icon */
   }
 }

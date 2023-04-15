@@ -1,6 +1,6 @@
 // mixins for flexbox display
-// j stand for justify-content option
-// a stand for align-items option
+// j stands for justify-content option
+// a stands for align-items option
 // and ja for both
 
 @mixin flex-row-j($justify) {
@@ -53,7 +53,7 @@
 @mixin position($p: absolute, $t: "", $r: "", $b: "", $l: "") {
   position: #{$p};
 
-  @if $p ==absolute or $p ==relative {
+  @if $p == absolute or $p == relative {
 
     @if $t {
       top: #{$t};
@@ -72,7 +72,7 @@
     }
   }
 
-  @if $p ==absolute and $t =="" and $r =="" and $b =="" and $l =="" {
+  @if $p == absolute and $t == "" and $r == "" and $b == "" and $l == "" {
     top: 0;
     right: 0;
     bottom: 0;

@@ -1,24 +1,29 @@
-.like {
-  position: relative;
+/*
+ The heart animation is realized with two superimposed images
+ Included in a p tag in order to make a transition with opacity
+*/
+
+.like /* p.like */ {
+  position: relative;  /* allow positionning images compared with this container */ 
   width: 24px;
   height: 24px;
+  cursor: pointer;
 
   &--home {
-    @include position($r: 25px, $b: 24px);
+    @include position($r: 25px, $b: 24px);  /* absolute position on the home page cards */
   }
 
-  &__icon {
-    @include position;
-    opacity: 1;
-    transition: opacity 500ms ease-out;
+  &__icon /* the first image, svg format */ {
+    opacity: 1;     /* visible when not hovered */
+    transition: opacity 500ms ease-out; /* transition opacity */
 
     &:hover {
       opacity: 0;
     }
 
-    &--checked {
-      opacity: 0;
-      transition: opacity 500ms ease-out;
+    &--checked /* the second image, svg format */ {
+      @include position; /* absolute position, top, right, bottom and left: 0 */
+      opacity: 0; /* invisible when not hovered */
 
       &:hover {
         opacity: 1;

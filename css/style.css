@@ -431,9 +431,9 @@ a {
   display: none;
 }
 
+/* The dish selector animation is triggered when the .meal component is hovered */
 .meal {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 66px;
   padding-left: 12px;
@@ -442,16 +442,16 @@ a {
   border-radius: 15px;
   cursor: pointer;
   overflow: hidden;
-  animation: progress-menu 1s ease-out both;
+  animation: progress-menu 1s ease-out both; /* gradual appearance of the meals */
 }
 .meal:hover > .meal__layout {
-  width: calc(100% - 59px);
+  width: calc(100% - 59px); /* leave room for the button appearance */
 }
 .meal:hover > .meal__select {
   width: 59px;
 }
 .meal:hover > .meal__select > .meal__icon {
-  transform: rotate(360deg);
+  transform: rotate(360deg); /* rotation of the check icon */
 }
 .meal--two {
   animation-delay: 250ms;
@@ -460,8 +460,6 @@ a {
   animation-delay: 500ms;
 }
 .meal__layout {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   transition: width 500ms ease-out 100ms;
 }
@@ -470,9 +468,9 @@ a {
   font-weight: 500;
   line-height: 1.4;
   padding-right: 62px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: nowrap; /* no wrap to the next line */
+  overflow: hidden; /* hide the overflowing text */
+  text-overflow: ellipsis; /* and insert ellipsis at the cut */
 }
 .meal__heading::first-letter {
   text-transform: uppercase;
@@ -480,7 +478,6 @@ a {
 .meal__div {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   padding-right: 20px;
 }
 .meal__desc {
@@ -504,14 +501,13 @@ a {
   height: 100%;
   background-color: #99E2D0;
   border: none;
-  border-radius: 0 15px 15px 0;
   font-size: 1.25em;
-  transition: width 500ms ease-out 100ms;
+  transition: width 500ms ease-out 100ms; /* transition of the button made with width property  on .meal hover */
 }
 .meal__icon {
   color: white;
   transform: rotate(0deg);
-  transition: transform 500ms ease-out 100ms;
+  transition: transform 500ms ease-out 100ms; /* rotation of the check icon */
 }
 
 .loader {
@@ -575,31 +571,37 @@ a {
   box-shadow: 0 5px 5px 2px #C7C7C7;
 }
 
+/*
+ The heart animation is realized with two superimposed images
+ Included in a p tag in order to make a transition with opacity
+*/
 .like {
-  position: relative;
+  position: relative; /* allow positionning images compared with this container */
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 .like--home {
   position: absolute;
   right: 25px;
   bottom: 24px;
+  /* absolute position on the home page cards */
 }
 .like__icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 1;
-  transition: opacity 500ms ease-out;
+  opacity: 1; /* visible when not hovered */
+  transition: opacity 500ms ease-out; /* transition opacity */
 }
 .like__icon:hover {
   opacity: 0;
 }
 .like__icon--checked {
-  opacity: 0;
-  transition: opacity 500ms ease-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* absolute position, top, right, bottom and left: 0 */
+  opacity: 0; /* invisible when not hovered */
 }
 .like__icon--checked:hover {
   opacity: 1;
