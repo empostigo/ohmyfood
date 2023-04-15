@@ -4,8 +4,7 @@
   height: 24px;
 
   &--home {
-    @include position($r: 0, $b: 24px);
-    padding-right: 25px;
+    @include position($r: 25px, $b: 24px);
   }
 
   &__icon {

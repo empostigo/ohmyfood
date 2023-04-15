@@ -582,9 +582,8 @@ a {
 }
 .like--home {
   position: absolute;
-  right: 0;
+  right: 25px;
   bottom: 24px;
-  padding-right: 25px;
 }
 .like__icon {
   position: absolute;
