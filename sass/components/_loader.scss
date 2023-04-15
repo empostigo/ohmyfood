@@ -1,12 +1,10 @@
 .loader {
-  position: absolute;
+  @include position($t: 366px, $l: calc(50% - 41px));
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 16px solid $primary-color;
   box-shadow: 0 0 12px 1px $primary-color;
-  top: 366px;
-  left: calc(50% - 41px);
   animation: opac 1ms linear 2.25s both;
 
   &::after {

@@ -512,13 +512,13 @@ a {
 
 .loader {
   position: absolute;
+  top: 366px;
+  left: calc(50% - 41px);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 16px solid #9356DC;
   box-shadow: 0 0 12px 1px #9356DC;
-  top: 366px;
-  left: calc(50% - 41px);
   animation: opac 1ms linear 2.25s both;
 }
 .loader::after {
