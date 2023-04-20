@@ -1,26 +1,23 @@
-// colors 
-$primary-color: #9356DC;
+// colors
+$primary-color: #9356dc;
 $lighten-primary: #f5edff;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
 $neutral: black;
-$gradient-color1: #CECECE;
-$gradient-color2: #EAEAEA;
-$dark-ground: #EAEAEA;
-$light-ground: #F7F7F7;
+$gradient-color1: #cecece;
+$gradient-color2: #eaeaea;
+$dark-ground: #eaeaea;
+$light-ground: #f7f7f7;
 $light-text: white;
 $no-color: white;
-$shadow-color: #C7C7C7;
+$shadow-color: #c7c7c7;
 $howto-colors: #7e7e7e;
 $footer-color: #353535;
 $new-color: #008766;
 
 // font family
-$heading-font: 'Shrikhand';
-$text-font: (
-  'Roboto',
-  sans-serif,
-);
+$heading-font: "Shrikhand";
+$text-font: ("Roboto", sans-serif);
 
 // weight
 $thin: 100;
@@ -34,19 +31,7 @@ $xbold: 900;
 $base_font-size: 16px;
 
 // Selector list for padding and margin reset
-$selectors: (
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  body,
-  p,
-  ol,
-  ul,
-  button,
-);
+$selectors: (h1, h2, h3, h4, h5, h6, body, p, ol, ul, button);
 
 // media query min-width
 $min-desktop-width: 768px;
