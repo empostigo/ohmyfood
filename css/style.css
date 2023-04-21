@@ -104,7 +104,7 @@ a {
   flex-direction: column;
   row-gap: 36px;
   padding: 40px 10px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border-radius: 40px 40px 0 0;
 }
 @media (min-width: 768px) {
@@ -144,7 +144,7 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 33px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding-bottom: 55px;
 }
 .search-form__label {
@@ -152,8 +152,8 @@ a {
   justify-content: center;
   align-items: baseline;
   column-gap: 1em;
-  background-color: #EAEAEA;
-  border-image: linear-gradient(#CECECE, #EAEAEA) 100;
+  background-color: #eaeaea;
+  border-image: linear-gradient(#cecece, #eaeaea) 100;
   border-width: 4px 0 0 0;
   border-style: solid;
 }
@@ -166,7 +166,7 @@ a {
   font-size: 1em;
   font-weight: 400;
   width: 176px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   border: none;
 }
 .search-form__input:focus {
@@ -235,7 +235,7 @@ a {
   font-weight: 500;
   color: white;
   padding: 5px 8px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 12px;
   counter-increment: bullets;
   content: counter(bullets);
@@ -244,7 +244,7 @@ a {
   background-color: #f5edff;
 }
 .howto__items:hover .howto__div .howto__icons {
-  color: #9356DC;
+  color: #9356dc;
 }
 .howto__div {
   display: flex;
@@ -253,8 +253,8 @@ a {
   height: 74px;
   width: 100%;
   margin-left: -30px;
-  background-color: #F7F7F7;
-  box-shadow: 6px 6px 12px 2px #EAEAEA;
+  background-color: #f7f7f7;
+  box-shadow: 6px 6px 12px 2px #eaeaea;
   border-radius: 20px;
   z-index: -1;
 }
@@ -285,7 +285,7 @@ a {
   flex-direction: column;
   row-gap: 26px;
   padding: 60px 20px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 @media (min-width: 768px) {
   .restaurants {
@@ -373,8 +373,8 @@ a {
   font-weight: 300;
   text-transform: uppercase;
   padding-bottom: 5px;
-  border-bottom: 3px solid #99E2D0;
-  border-image: linear-gradient(to right, #99E2D0 12%, transparent 12%) 100% 1;
+  border-bottom: 3px solid #99e2d0;
+  border-image: linear-gradient(to right, #99e2d0 12%, transparent 12%) 100% 1;
 }
 
 .wrapper {
@@ -425,7 +425,7 @@ a {
   font-size: 0.875em;
   font-weight: 500;
   color: #008766;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 .card__new--hidden {
   display: none;
@@ -438,7 +438,7 @@ a {
   height: 66px;
   padding-left: 12px;
   background-color: white;
-  box-shadow: 0 0 12px #CECECE;
+  box-shadow: 0 0 12px #cecece;
   border-radius: 15px;
   cursor: pointer;
   overflow: hidden;
@@ -499,7 +499,7 @@ a {
 .meal__select {
   width: 0;
   height: 100%;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border: none;
   font-size: 1.25em;
   transition: width 500ms ease-out 100ms; /* transition of the button made with width property  on .meal hover */
@@ -517,8 +517,8 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 16px solid #9356DC;
-  box-shadow: 0 0 12px 1px #9356DC;
+  border: 16px solid #9356dc;
+  box-shadow: 0 0 12px 1px #9356dc;
   animation: opac 1ms linear 2.25s both;
 }
 .loader::after {
@@ -528,7 +528,7 @@ a {
   left: -25px;
   border-radius: 50%;
   z-index: -1;
-  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-image: linear-gradient(#9356dc, #ff79da);
   animation: pulse 750ms ease-out 3;
 }
 @media (min-width: 768px) {
@@ -540,7 +540,7 @@ a {
 .purple-button {
   color: white;
   align-self: center;
-  background: linear-gradient(350deg, #9356DC, #FF79DA);
+  background: linear-gradient(350deg, #9356dc, #ff79da);
   font-size: 1em;
   font-weight: 500;
   height: 50px;
@@ -548,7 +548,7 @@ a {
   min-width: 186px;
   border: none;
   border-radius: 24px;
-  box-shadow: 0 5px 5px #C7C7C7;
+  box-shadow: 0 5px 5px #c7c7c7;
   cursor: pointer;
   position: relative;
   z-index: 1;
@@ -567,8 +567,8 @@ a {
   z-index: -1;
   transition: opacity 300ms;
   border-radius: 24px;
-  background: linear-gradient(350deg, #9356DC, 30%, #FF79DA);
-  box-shadow: 0 5px 5px 2px #C7C7C7;
+  background: linear-gradient(350deg, #9356dc, 30%, #ff79da);
+  box-shadow: 0 5px 5px 2px #c7c7c7;
 }
 
 /*
